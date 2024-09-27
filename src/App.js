@@ -1,9 +1,11 @@
 import React from "react";
-import Login from "./react/Login";
 
+import Log from "./REACT/Log";
 function App(){
   return(
-    <Login/>
+    <>
+    <Log/>
+    </>
   );
 }
 export default App;
