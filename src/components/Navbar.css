@@ -1,0 +1,94 @@
+/* General Header and Navbar Styles */
+header {
+  background-color: #282c34;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for header */
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Burger Menu Icon Styles */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Transform burger lines into an "X" when menu is open */
+.burger .line:nth-child(1).open {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.burger .line:nth-child(2).open {
+  opacity: 0;
+}
+
+.burger .line:nth-child(3).open {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #282c34;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 100;
+  }
+
+  /* Show the navigation menu when open */
+  header ul.open {
+    display: flex;
+  }
+
+  /* Display burger icon on small screens */
+  .burger {
+    display: flex;
+  }
+
+  /* Adjust logo font size for smaller screens */
+  header .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Add padding to body to avoid header overlapping the content */
+  body {
+    padding-top: 70px;
+  }
+}

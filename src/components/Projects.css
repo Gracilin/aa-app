@@ -1,0 +1,62 @@
+/* Projects.css */
+
+.projects-background {
+  background-color: #f0f0f0;  /* Background color */
+  padding: 40px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1 1 calc(25% - 20px);  /* Each card takes up 25% of the width minus the gap */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card h2 {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+
+

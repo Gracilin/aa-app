@@ -1,0 +1,55 @@
+/* Fullscreen layout */
+.aboutme {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background color */
+  text-align: center;
+}
+
+/* Centered content styling */
+.content {
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto;
+}
+
+/* Profile photo styling */
+.profile-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Circular photo */
+  margin-bottom: 20px; /* Space between photo and text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 48px;
+  color: #333; /* Dark text for contrast */
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 20px;
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.5; /* Better readability */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .profile-photo {
+    width: 120px; /* Smaller size for mobile */
+    height: 120px; /* Smaller size for mobile */
+  }
+}
